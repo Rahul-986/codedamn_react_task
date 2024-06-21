@@ -1,0 +1,9 @@
+Create a component called App that displays the number of times the user has hovered a button with the text “Hover Me”. The count should be displayed in an h1 element and updated each time the user hovers over the button. The initial value of the count should be set to 0. We have already written some starting code for you.image
+
+Instructions
+Set the initial value of the hover count to 0.
+Return a button element with the text Hover Me.
+Do not edit the data-testid attributes.
+Hints
+You can use the useState hook to store the data.
+Use the onMouseEnter event to detect if the user has hovered over the button.
