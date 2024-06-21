@@ -1,0 +1,37 @@
+In this lab, you'll create a simple, interactive 4-point rating system using emojis. Users will select an emoji to rate, and then provide detailed feedback in a text area. Your task is to implement this functionality in React, focusing on user interaction and state management.
+
+Steps to Build the App:
+Create the Rating Interface:
+
+Set up a <div> with the ID #feedback.
+Inside this div, place four buttons, each displaying one of the following emojis: 😍, 😀, 🙁, 😭.
+Implement Feedback Mechanism:
+
+When a user clicks on any emoji button, display a text area for them to enter their feedback.
+Add a submit button with the ID #submit alongside the text area.
+Handle Feedback Submission:
+
+On clicking the #submit button, log both the selected emoji and the text from the text area to the console.
+Challenges Information
+Challenge 1: Setup the Rating Interface
+Objective: Create the foundational user interface for the rating system.
+
+Task: Implement a <div> element with the ID #feedback.
+Requirements:
+This div must contain four button elements, each displaying one of the specified emojis (😍, 😀, 🙁, 😭).
+Ensure that this div and its contents are visible on the page.
+Challenge 2: Implement Feedback Prompt Interaction
+Objective: Develop interactive functionality that prompts the user for detailed feedback upon emoji selection.
+
+Task: Enable a reaction mechanism when any of the emoji buttons is clicked.
+Requirements:
+Upon clicking any emoji button, dynamically display a text area element and a button with the ID #submit for the user to submit their feedback.
+Ensure the text area and submit button are visible and functional.
+Challenge 3: Handle Submission and Log Feedback
+Objective: Manage the feedback submission and demonstrate data handling.
+
+Task: Set up functionality for the #submit button.
+Requirements:
+When the #submit button is clicked, ensure the text entered in the text area and the emoji selected are logged to the console.
+Ensure the log format is clear and consistent, indicating both the emoji selected and the feedback text.
+Remember, the key is to manage the state and interactions in React. This includes showing and hiding the feedback form, capturing the user's input, and handling the submit action. This lab will test your understanding of React's state management, event handling, and conditional rendering.
