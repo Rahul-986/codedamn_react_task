@@ -14,11 +14,7 @@ export default function App() {
 			{emojis.map((emoji)=>(
 
 			<button onClick={(e)=>{setEmoji(e.target.value)}}>{emoji}</button>
-			)
-			)
-			}
-      
-
+			))}
 		</div>
 		<div className={"flex flex-col" + (emoji==null ? " hidden":"")}>
 		<textarea className="border-2 border-gray-700 p-2 m-2 " onChange={(e)=>{setContent(e.target.value)}}/>
