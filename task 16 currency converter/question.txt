@@ -1,0 +1,57 @@
+67.5% Acceptance
+In this lab, you will create a simple currency converter application using React. This app will allow users to convert a value from one currency to another by fetching real-time exchange rates from an API.
+
+Steps to Build the App
+Create Input Fields: Add two text input elements with IDs #from and #to. These will be used for entering the currency codes (e.g., USD, EUR) that the user wants to convert between.
+
+<input type="text" id="from" maxlength="3" placeholder="From: e.g., USD" />
+<input type="text" id="to" maxlength="3" placeholder="To: e.g., EUR" />
+Add a Convert Button: Include a button with the ID #convert. This button, when clicked, will trigger the currency conversion process.
+
+<button id="convert">Convert</button>
+Display Area: Implement a div element with the ID #currencyValue where the conversion result will be displayed.
+
+<div id="currencyValue"></div>
+Styling (Optional): You may add CSS to give your application a pleasant look. Consider using different colors for inputs, button, and result display.
+
+Using the Currency Conversion API
+API Endpoint: https://open.er-api.com/v6/latest/{currencyCode}
+Fetching Data: Replace {currencyCode} with the currency code from the #from input field to get the latest exchange rates.
+Parsing the Response:
+The API returns a JSON object with a rates property containing currency values.
+Example response snippet: {"rates": {"USD": 1, "INR": 90.23}}
+Calculating Conversion:
+Retrieve the rate for the #to currency from the rates object.
+Calculate the converted value and display it in the #currencyValue div.
+Example
+// Example of fetching exchange rates for USD
+fetch('https://open.er-api.com/v6/latest/USD')
+  .then(response => response.json())
+  .then(data => {
+    const rate = data.rates['EUR']; // Assuming EUR is the target currency
+    const convertedValue = 1 * rate; // Convert 1 unit of USD to EUR
+    document.getElementById('currencyValue').innerText = convertedValue;
+  });
+Challenges
+Challenge 1: Implement Input Fields for Currency Codes
+Objective: Create two text input elements for entering currency codes.
+Requirements:
+Create an input field for the currency being converted from with an ID of #from. This input should accept and restrict the input to a maximum of three letters, representing standard currency codes.
+Create a second input field for the currency being converted to with an ID of #to, also limiting the input to three letters.
+Challenge 2: Create a Convert Button
+Objective: Provide a button to initiate the currency conversion.
+Requirements:
+Introduce a button element in the HTML.
+This button must have the ID #convert.
+The button should be labeled in a way that indicates its purpose for converting currencies.
+Challenge 3: Design an Output Display Element
+Objective: Establish a space for displaying the conversion results.
+Requirements:
+Create a div element where the result of the currency conversion will be shown.
+Assign this element the ID #currencyValue.
+Challenge 4: Implement Conversion Logic and Display
+Objective: Activate the conversion process through the button click.
+Requirements:
+Program the #convert button so that when clicked, it calculates the equivalent value of one unit of the #from currency in the #to currency.
+Use the API endpoint https://open.er-api.com/v6/latest/{from} for fetching conversion rates.
+Display the conversion result in the #currencyValue div. Ensure the div updates to show the result after the button click.
