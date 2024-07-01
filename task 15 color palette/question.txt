@@ -1,0 +1,53 @@
+In this lab, you'll create a simple React application that generates random color palettes. Follow these steps to build your app:
+
+Generate Button:
+
+Implement a button with the ID generate.
+This button, when clicked, will trigger the generation of a random color palette.
+Display Current Palette:
+
+Create a div with the ID current-palette where the generated palette will be displayed.
+Save Functionality:
+
+Provide a way to save the generated palette by including a 'Save' button within the current-palette div.
+Saved Palettes Section:
+
+Add another div with the ID saved-palettes to display all the saved palettes with an option to delete each pallete with a delete button having the class delete-palette-button
+Styling:
+
+Apply CSS to make the color blocks square and ensure the hex codes are readable against the color background.
+Example Markup:
+Here's a simple example of what your markup might look like after generating a palette:
+
+<div id="current-palette">
+  <div class="color-block" style="background-color: #1A1A1A;">#1A1A1A</div>
+  <div class="color-block" style="background-color: #EFEFEF;">#EFEFEF</div>
+  <div class="color-block" style="background-color: #4D4D4D;">#4D4D4D</div>
+  <div class="color-block" style="background-color: #808080;">#808080</div>
+  <div class="color-block" style="background-color: #B3B3B3;">#B3B3B3</div>
+  <button id="save">Save Palette</button>
+</div>
+Hints
+Use JavaScript to generate random hex codes for colors.
+Each color block should show a unique color upon each generation.
+Challenges
+Challenge 1: Generate Button
+Implement a button element on the main page.
+The button must have an id attribute with the value generate.
+This button should be interactive and visible to the user.
+Challenge 2: Current Palette Display
+Include a div element to serve as the display area for the current palette.
+Assign this div an id attribute with the value current-palette.
+Style this div to clearly display the color blocks and their hex codes.
+Challenge 3: Saved Palettes Section
+Add a div element for displaying saved color palettes.
+This div should have an id attribute set to saved-palettes.
+Ensure it can display multiple palettes, each with options for interaction.
+Challenge 4: Generating and Saving Palettes
+The #generate button should, when clicked, create 5 color blocks in the #current-palette div.
+Each color block must show a unique color and its hex code.
+Include a button with id save within #current-palette to save the current palette.
+Ensure that generated colors are random and displayed immediately upon generation.
+Challenge 5: Interaction with Saved Palettes
+The #saved-palettes div should show each saved palette with options to interact.
+Each saved palette must include a button to delete it from the saved palettes with class delete-palette-button
