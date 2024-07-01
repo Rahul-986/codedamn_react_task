@@ -24,8 +24,6 @@ export default function App() {
 		<textarea className="border-2 border-gray-700 p-2 m-2 " onChange={(e)=>{setContent(e.target.value)}}/>
 		<button id="submit" className="border-1 border p-2 rounded bg-blue-400"onClick={handleSubmit}>Submit</button>
 		</div>
-
-
 		</>
 	);
 }
