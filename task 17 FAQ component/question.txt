@@ -1,0 +1,48 @@
+FAQ Component
+Easy
+31
+1
+69.8% Acceptance
+In this lab, you will create a simple yet functional accordion component using React. An accordion is a UI pattern consisting of collapsible items, typically used for displaying FAQs or other content in a space-efficient manner. Your task is to build an accordion where only one item's content is displayed at a time.
+
+Steps to Build the App
+Create the Accordion Component: Design your accordion component with the necessary HTML structure and React state logic.
+
+Each accordion item should be a div with a class accordion. Inside this, include two child div elements: one with a class question for the item title, and another with a class answer for the item content.
+Implement Global State: Use React's state management to control which accordion item is open by default. Initially, the first item should be open, and the rest collapsed.
+
+Add Interactive Behavior: Implement functionality that allows users to click on an accordion item to view its content. Clicking another item should close the currently open item and open the new one.
+
+Render Multiple Items: Ensure your app contains exactly four accordion items, each adhering to the specified structure.
+
+sample gif
+
+Example Markup
+Here's a simple example of what the HTML structure of your accordion component might look like:
+
+<div className="accordion">
+    <div className="question">Question 1</div>
+    <div className="answer">Answer 1</div>
+</div>
+<div className="accordion">
+    <div className="question">Question 2</div>
+    <div className="answer">Answer 2</div>
+</div>
+<!-- Add more accordion items similarly -->
+Challenges Information
+Challenge 1: Accordion Structure
+Objective: Construct the accordion with the correct HTML structure.
+Details: Each accordion item should be a div with a class of accordion. Inside this, there should be two child div elements: one with a class of question and the other with a class of answer.
+Expectation: Your accordion should have the correct parent and child elements with the specified classes. This structure is crucial for the functionality and styling of the component.
+Challenge 2: Implementing Global State
+Objective: Manage the accordion's state globally.
+Details: Use a global state to control which accordion item is opened by default when the page loads. The first FAQ should be open, and the others should be collapsed initially.
+Expectation: Your implementation should ensure only the first accordion item is expanded initially. This tests your ability to use state effectively in React.
+Challenge 3: Interactive Accordion Behavior
+Objective: Create a functional accordion where only one item is visible at a time.
+Details: Implement functionality where clicking an accordion item toggles its visibility. If another item is clicked, the currently open item should collapse, and the clicked item should expand.
+Expectation: Ensure that clicking an accordion item correctly toggles the visibility of its content. This tests event handling and state updates based on user interaction.
+Challenge 4: Multiple Accordion Elements
+Objective: Populate the page with multiple accordions.
+Details: The page should contain exactly four accordion elements, each following the specified structure (div.accordion with child div.question and div.answer).
+Expectation: Accurately rendering multiple accordion elements tests your ability to replicate components in React while maintaining consistency and functionality.
