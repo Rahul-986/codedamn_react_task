@@ -1,0 +1,40 @@
+In this lab, you'll build a simple React application that demonstrates pagination functionality. This app will interact with the jsonplaceholder API to fetch and display data. The main features include automatically loading data on page load and fetching additional data upon user interaction.
+
+Steps for Building the App
+Initial Setup: Create a basic React application.
+Fetch Data: On app load, fetch the first 10 records from the jsonplaceholder API.
+Display Data: Show the fetched data in a table on the application's main view.
+Implement Pagination:
+Add a button to load the next set of 10 records.
+Ensure the button has an ID of #next for testing purposes.
+Update Display: Modify the table to show the new set of records each time the 'Next' button is clicked.
+Markup and ID Details
+'Next' Button ID: Ensure the button for fetching additional records has an ID of #next.
+Table Structure:
+The table should have a thead section with column headers.
+Column names: ID, Title, Body.
+The tbody section should display the data fetched from the API.
+Data Types and Table Columns
+The data displayed in the table should be of the correct type corresponding to the API response.
+The ID column should display numeric IDs.
+The Title and Body columns should display textual data.
+API Link
+You have to use the following URL to fetch the posts : https://jsonplaceholder.typicode.com/posts?_limit=10&_page=${page}
+
+You can change the value of the page based on the click of the next button. The default value of the page should be 1
+
+Challenges Information
+Challenge 1: Initial Data Fetch and Display
+Objective: Implement the initial data loading functionality in the pagination app. Description:
+
+Upon loading the app, it should automatically fetch the first 10 items from the jsonplaceholder API.
+These items should be displayed in a table format within the application.
+The table should be structured to clearly present the data fetched, making sure it's readable and user-friendly.
+Ensure the data is fetched and displayed as soon as the app loads. This challenge tests the ability to make API calls on component mount and render the fetched data in a structured format.
+Challenge 2: Implementing the 'Next' Functionality
+Objective: Add functionality to fetch additional data and update the display upon user interaction. Description:
+
+The app should feature a button at the end of the table, labeled appropriately (e.g., 'Next Items'), with the specific ID #next.
+When this button is clicked, the app should fetch the next set of 10 items from the jsonplaceholder API.
+After fetching, the app should update the table to display these new items, either by appending them to the existing list or replacing the current items, as per the design requirements.
+This challenge tests the skills in handling user interactions, making subsequent API calls, and dynamically updating the application's state and UI based on these interactions.
