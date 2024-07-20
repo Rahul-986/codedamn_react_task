@@ -1,0 +1,12 @@
+Write a simple component called App that displays a button with the text "Click me!" and logs a Clicked! message to the console when clicked.
+
+We have already written some starting code for you.
+
+image
+
+Instructions
+Return a single button element with the text Click me!
+Log Clicked! to the console when the button is clicked.
+Do not edit the data-testid attributes.
+Hints
+You can use the onClick event handler on the button to execute the console.log method.
