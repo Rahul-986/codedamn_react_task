@@ -1,0 +1,30 @@
+You are given a simple Counter component that displays a count and two buttons to increment and decrement the count. You need to modify the component to store the count in the browser's local storage so that the count is persisted even when the page is refreshed. We have already written some starting code for you.image
+
+Instructions
+Do not edit the data-testid attributes.
+Use the reload button in the demo browser to test if your component works as expected.
+You can import any methods from the react library.
+Use key count to store the data in local storage.
+Hints
+Make use of the useState hook to initialize the count from the value stored in the local storage.
+Use the useEffect hook to store the updated count value in the local storage every time it changes.
+When initialising the count, use localStorage.getItem to retrieve the stored count value and parse it into an integer.
+3458910111213141516171819202126722
+import React, { useEffect, useState } from 'react'
+
+function Counter() {
+	const number = parseInt(localStorage.getItem("count")) ||0
+	const [count, setCount] = useState(number);
+	useEffect(()=>
+    localStorage.setItem("count",count),[count])
+
+	return (
+		<div>
+
+
+Test Result Output
+
+https://dry-tongue.codedamn.app/
+
+
+Run Tests
