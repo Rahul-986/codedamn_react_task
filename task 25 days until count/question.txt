@@ -1,0 +1,32 @@
+In this lab, you will create a simple React application that allows a user to pick a future date from an input field and calculate the number of days from the current date to the selected date. Moreover, the app will display an error if the picked date is in the past.
+
+Steps to Build the App
+Create Date Input: Start by creating an input field that allows users to select a date. Ensure this input has the id attribute set to datePicker.
+
+Add Button: Implement a button labeled 'Find Days' with an id attribute of findDays. This button will trigger the calculation of days.
+
+Display Result: Upon clicking the 'Find Days' button, your app should calculate the number of days between the current date and the selected future date. Display this result in a user-friendly way.
+
+Error Handling: If a date in the past is entered, your application should display an error message in a div with an id of error.
+
+IDs for Testing
+Your markup must include the following IDs for the automated tests to verify your lab:
+
+datePicker: The ID for the date input field.
+findDays: The ID for the button to initiate the calculation.
+error: The ID for the div element that will display the error message if the date is in the past.
+Example of Days Calculation
+If today's date is 2023-11-23 and the user selects 2023-11-30, clicking the 'Find Days' button should display the number 7, indicating one week until the specified date.
+
+Please follow these instructions carefully to ensure your lab passes all the automated tests.
+
+Challenges Information
+Challenge 1: Set Up the Date Picker and Button
+Task: Create an input element for users to pick a date. This input must have an id of datePicker. There should also be a button element labeled 'Find Days' with an id of findDays.
+Objective: Ensure that the input and button elements are correctly created with the specified id attributes. The input should accept dates only.
+Challenge 2: Implement the Days Calculation
+Task: When the user clicks the 'Find Days' button, the application should calculate and display the number of days from the current date to the specified future date. Ensure the calculated number of days is displayed in a clear and user-friendly manner.
+Objective: Test the ability to handle user interactions and perform date calculations in React. The display of the calculation should be intuitive to the user.
+Challenge 3: Error Handling for Past Dates
+Task: If a user selects a date in the past, upon clicking 'Find Days', the application must show an error message. This message should be displayed within a div element with an id of error and contain the text 'error'.
+Objective: Assess the implementation of validation checks and error handling within the React application. The user should receive immediate feedback if the selected date is not valid.
